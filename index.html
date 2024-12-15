@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games-oop</title>
+    <link rel="icon" href="images/logo-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <section class="games">
+
+      <!----------- img started ----------->
+      <header>
+        <img src="images/wraper.png" class="w-100" alt="game photo" />
+      </header>
+      <!----------- Navbar----------------->
+      <nav 
+      class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
+      <div class="container w-100">
+       <h1 class="py-1 mb-0 text-uppercase">
+          <img  src="images/logo-sm.png"alt="logo photo"style="max-width: 40px"/>Game Reviews
+        </h1>
+        <button class="navbar-toggler"type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse small navbar-collapse"  id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+            <li class="nav-item">
+              <a role="button" class="nav-link active text-uppercase" aria-current="page" data-category="mmorpg">mmorpg </a>
+            </li>
+            <li class="nav-item">
+              <a role="button"class="nav-link text-uppercase" data-category="shooter"  >shooter</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a  role="button"  class="nav-link text-uppercase" data-category="permadeath" >permadeath</a>
+               
+            </li>
+            <li class="nav-item">
+              <a  role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link text-uppercase" data-category="pixel" >pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+      <!----------- game card ------------->
+      <main
+       class="container my-5 game-cards">
+        <section class="position-relative">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData"></div>
+        </section>
+      </main>
+
+    </section>
+
+    <!-------------game details ---------->
+    <section class="details d-none min-vh-100">
+      <div class="container">
+        <header class="hstack justify-content-between"> 
+          <h1 class="h4 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+
+      <div class="row g-4" id="detailsContent">
+      </div>
+      <div class="hstack justify-content-between" id="detailsPhoto"></div>
+      </div>
+    </section>
+
+    <!------------- loading -------------->
+    <div class="games py-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="loading w-100 h-100 m-0 d-flex d-none justify-content-center align-items-center">
+                  <div class="wrapper position-relative">
+                      <div class="red rounded-circle xy-center border border-5 border-start-0 border-bottom-0 border-end-0 border-danger"
+                          style="width: 100px; height: 100px;">
+                      </div>
+                      <div class="white z-3 position-absolute  rounded-circle border border-5 border-start-0 border-top-0 border-end-0 border-white"
+                          style="width: 95px; height: 95px;"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+     <!-- -------script js-------- -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script type="module" src="js/index.js"></script>
+       
+  </body>
+</html>
